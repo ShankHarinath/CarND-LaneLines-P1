@@ -38,7 +38,10 @@ The goals / steps of this project are the following:
 ## 2. Identify potential shortcomings with your current pipeline
 
 * Curved lanes are not easy to fit, as we use line segments to draw the lanes.
+* The line segments in the video are very jerky. Line segment from the previous frame doesn't blend into the next frame.
 
 ## 3. Suggest possible improvements to your pipeline
 
 * Use a quadratic or higher order equation to model the lanes, so that curved lanes can also be fit properly.
+* Remember the lane history of previous frames to render a smooth lane detection in the video.
+    - May be a decaying weighted average of the historical frames or slopes & intercept. Oldest frame has the least weight and the latest the maximum weight.
