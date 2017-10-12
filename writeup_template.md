@@ -51,10 +51,6 @@ The goals / steps of this project are the following:
 6. This is used to extrapolate the line segment from the bottom of the image to the middle of the image.
 7. This image is overlaped with the original image to mark the lanes.
 
-### Pipeline flow for an image: ###
-![alt text][image1]
-
-
 ## 2. Identify potential shortcomings with your current pipeline
 
 * Curved lanes are not easy to fit, as we use line segments to draw the lanes.
