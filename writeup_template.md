@@ -15,12 +15,32 @@ The goals / steps of this project are the following:
 1. Convert the RGB image to HSL image. (to accomodate for the reflection and dark areas)
     - I also tried HSV, HSL had better results.
 2. Select only the yellow and white hue from the image.
+
+![HSL-white-yellow](./test_run/1.jpg)
+
 3. Convert the image into greyscale.
+
+![HSL-white-yellow](./test_run/2.jpg)
+
 4. Apply gaussian blur.
+
+![HSL-white-yellow](./test_run/3.jpg)
+
 5. Select the region of image where the lanes are likely to be.
+
+![HSL-white-yellow](./test_run/4.jpg)
+
 6. Apply Canny edge detection.
-7. Apply Probabilistic Hough Line transformation.
+
+![HSL-white-yellow](./test_run/5.jpg)
+
+7. Apply Probabilistic Hough Line transformation & extrapolate average slope and intercepts.
+
+![HSL-white-yellow](./test_run/6.jpg)
+
 8. Overlap this image with the original image
+
+![HSL-white-yellow](./test_run/7.jpg)
 
 ### In order to draw a single line on the left and right lanes, I modified the draw_lines() as below ###
 1. I obtained the slope and the intercept of each of the lines after Hough transformation.
